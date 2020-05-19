@@ -1,12 +1,12 @@
 class HogwartsService
-  def order_of_phoenix_members(house)
+  def order_of_phoenix_members_by_house(house)
     params = {
-        key: ENV['HARRY_POTTER_API_KEY'],
-        orderOfThePhoenix: true,
-        house: house
-      }
+      key: ENV['HARRY_POTTER_API_KEY'],
+      orderOfThePhoenix: true,
+      house: house
+    }
+              
     get_json("/v1/characters", params)
-
   end
 
   private
