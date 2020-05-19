@@ -1,5 +1,5 @@
 class SearchResults
-  def order_of_phoenix_members(house)
+  def phoenix_order_members(house)
     json = HogwartsService.new.order_of_phoenix_members_by_house(house)
 
     json.map do |member_info|

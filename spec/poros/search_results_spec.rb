@@ -8,7 +8,7 @@ describe SearchResults do
   end
   it "#order_of_phoenix_members" do
     search_results = SearchResults.new
-    gryffindor_members = search_results.order_of_phoenix_members("Gryffindor")
+    gryffindor_members = search_results.phoenix_order_members("Gryffindor")
 
     ron = gryffindor_members.last
 
