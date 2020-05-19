@@ -19,12 +19,14 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem 'faraday'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'webmock'
 end
 
 group :development do
